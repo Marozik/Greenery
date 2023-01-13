@@ -633,7 +633,7 @@ body {
   display: block;
   width: 0.25rem;
   height: 0.25rem;
-  background-color: #3E5860;
+  background-color: #DD6060;
   -webkit-transition: all 0.3s ease 0s;
   -o-transition: all 0.3s ease 0s;
   transition: all 0.3s ease 0s;
@@ -1137,9 +1137,8 @@ body {
 }
 
 .hint.hint-active svg path {
-  animation: showArrow ease 2s forwards;
-  -webkit-animation: showArrow ease 2s forwards;
-  -moz-animation: showArrow ease 2s forwards;
+  -webkit-animation: showArrow ease 1s forwards;
+          animation: showArrow ease 1s forwards;
 }
 
 .hint svg {
@@ -1151,11 +1150,10 @@ body {
 .hint svg path {
   stroke: #e9f4f6;
   stroke-width: 0.125rem;
-  stroke-dashoffset: -178;
+  stroke-dashoffset: 0;
   stroke-dasharray: 178;
-  animation: hideArrow ease 1s forwards;
   -webkit-animation: hideArrow ease 1s forwards;
-  -moz-animation: hideArrow ease 1s forwards;
+          animation: hideArrow ease 1s forwards;
 }
 
 .hint__text {
@@ -1168,13 +1166,13 @@ body {
   letter-spacing: 0.045em;
   color: #4E6E77;
   opacity: 0;
-  -webkit-animation: hideText ease 0.3s forwards;
-          animation: hideText ease 0.3s forwards;
+  -webkit-animation: hideText ease 1s forwards;
+          animation: hideText ease 1s forwards;
 }
 
 .hint-active .hint__text {
-  -webkit-animation: showText ease 0.3s forwards 1.6s;
-          animation: showText ease 0.3s forwards 1.6s;
+  -webkit-animation: showText ease 0.5s forwards 0.7s;
+          animation: showText ease 0.5s forwards 0.7s;
 }
 
 .hint__button {
@@ -1280,21 +1278,21 @@ body {
 
 @keyframes hideArrow {
   0% {
-    stroke-dashoffset: 0;
+    opacity: 1;
   }
 
   100% {
-    stroke-dashoffset: -178;
+    opacity: 0;
   }
 }
 
 @keyframes showArrow {
   0% {
-    stroke-dashoffset: -178;
+    opacity: 0;
   }
 
   100% {
-    stroke-dashoffset: 0;
+    opacity: 1;
   }
 }
 
@@ -1707,9 +1705,9 @@ body {
   -ms-flex-item-align: start;
       align-self: flex-start;
   opacity: 0;
-  -webkit-transform: translate(-20%, 0);
-      -ms-transform: translate(-20%, 0);
-          transform: translate(-20%, 0);
+  -webkit-transform: translate(-40%, 0);
+      -ms-transform: translate(-40%, 0);
+          transform: translate(-40%, 0);
   -webkit-transition: all 0.7s ease 0.1s;
   -o-transition: all 0.7s ease 0.1s;
   transition: all 0.7s ease 0.1s;
@@ -1807,9 +1805,9 @@ body {
   /* 626/1110 */
   position: relative;
   opacity: 0;
-  -webkit-transform: translate(20%, 0);
-      -ms-transform: translate(20%, 0);
-          transform: translate(20%, 0);
+  -webkit-transform: translate(40%, 0);
+      -ms-transform: translate(40%, 0);
+          transform: translate(40%, 0);
   -webkit-transition: all 0.7s ease 0.1s;
   -o-transition: all 0.7s ease 0.1s;
   transition: all 0.7s ease 0.1s;
@@ -1862,9 +1860,9 @@ body {
   -ms-flex-item-align: start;
       align-self: flex-start;
   opacity: 0;
-  -webkit-transform: translate(-20%, 0);
-      -ms-transform: translate(-20%, 0);
-          transform: translate(-20%, 0);
+  -webkit-transform: translate(-40%, 0);
+      -ms-transform: translate(-40%, 0);
+          transform: translate(-40%, 0);
   -webkit-transition: all 0.7s ease 0.1s;
   -o-transition: all 0.7s ease 0.1s;
   transition: all 0.7s ease 0.1s;
@@ -1963,9 +1961,9 @@ body {
   /* 626/1110 */
   position: relative;
   opacity: 0;
-  -webkit-transform: translate(20%, 0);
-      -ms-transform: translate(20%, 0);
-          transform: translate(20%, 0);
+  -webkit-transform: translate(40%, 0);
+      -ms-transform: translate(40%, 0);
+          transform: translate(40%, 0);
   -webkit-transition: all 0.7s ease 0.1s;
   -o-transition: all 0.7s ease 0.1s;
   transition: all 0.7s ease 0.1s;
@@ -3162,7 +3160,7 @@ body {
   }
 
   .slide-intro__image img {
-    width: 110%;
+    width: 130%;
   }
 
   .slide-intro__image::before {
